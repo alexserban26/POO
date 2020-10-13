@@ -8,9 +8,9 @@ class Elev{
 public:
     Elev();
     explicit Elev(std::string);
-    explicit Elev(std::string, std::string);
-    explicit Elev(std::string, std::string, int);
-    explicit Elev(std::string, std::string, int, const char*);
+    Elev(std::string, std::string);
+    Elev(std::string, std::string, int);
+    Elev(std::string, std::string, int, const char*);
     Elev(Elev&);
     ~Elev();
 
