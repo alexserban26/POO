@@ -81,12 +81,14 @@ Elev::~Elev(){
 
 int main() {
 
-    Elev();
+    Elev elev_liber;
     Elev elev_chelu("Chelu");
     Elev elev_ion("Ion","Alex");
     Elev elev_popescu("Popescu","Andreea",10);
     Elev elev_andrei("Andrei","Vasile",12,"B");
     Elev elev_copie(elev_andrei);
+    Elev copie(elev_liber);
+
 
     return 0;
 }

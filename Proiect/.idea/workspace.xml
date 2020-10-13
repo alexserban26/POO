@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Proiect" targetName="Proiect" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6083685a-8a8e-477b-b1ea-293087040f82" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Proiect.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Proiect.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Proiect.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Proiect.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Proiect.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Proiect.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tema/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tema/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -21,5 +65,42 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1602582449534">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602582449534" />
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1602582955040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602582955040" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1602582955040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602582955040" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1602582955040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602582955040" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1602582955040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602582955040" />
   </component>
 </project>
