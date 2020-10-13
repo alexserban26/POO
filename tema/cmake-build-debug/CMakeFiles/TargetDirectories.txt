@@ -1,3 +1,0 @@
-C:/Users/alexs/POO/tema/cmake-build-debug/CMakeFiles/tema.dir
-C:/Users/alexs/POO/tema/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/alexs/POO/tema/cmake-build-debug/CMakeFiles/rebuild_cache.dir
