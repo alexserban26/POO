@@ -12,6 +12,7 @@ public:
     explicit Elev(std::string, std::string, int);
     explicit Elev(std::string, std::string, int, const char*);
     Elev(Elev&);
+    ~Elev();
 
     //void afisare_info_elev();
 
@@ -73,8 +74,14 @@ Elev::Elev(Elev &elev){
     std::cout<<this->nume<<" "<<this->prenume<<" Clasa "<<numar_clasa<<litera_clasa;
 }
 
+Elev::~Elev(){
+    std::cout<<"\n Sfarsitul programului\n";
+}
+
 
 int main() {
     Elev e("Andrei","Vasile",12,"B");
+
+
     return 0;
 }
