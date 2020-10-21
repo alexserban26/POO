@@ -4,7 +4,7 @@ class Elev {
     std::string nume, prenume;
     //std:: string CNP;
     int numar_clasa;
-    const char *litera_clasa;
+    char litera_clasa;
 
 public:
     Elev();
@@ -15,7 +15,7 @@ public:
 
     Elev(std::string, std::string, int);
 
-    Elev(std::string, std::string, int, const char *);
+    Elev(std::string, std::string, int, char );
 
     Elev(Elev &);
 
@@ -31,7 +31,7 @@ Elev::Elev() {
     nume = "-";
     prenume = "-";
     numar_clasa = -1;
-    litera_clasa = "-";
+    litera_clasa = (char) '-';
     std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -40,7 +40,7 @@ Elev::Elev(std::string nume) {
     this->nume = nume;
     prenume = "-";
     numar_clasa = -1;
-    litera_clasa = "-";
+    litera_clasa = (char) '-';
     std::cout << this->nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -49,7 +49,7 @@ Elev::Elev(std::string nume, std::string prenume) {
     this->nume = nume;
     this->prenume = prenume;
     numar_clasa = -1;
-    litera_clasa = "-";
+    litera_clasa = (char) '-';
     std::cout << this->nume << " " << this->prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -58,11 +58,11 @@ Elev::Elev(std::string nume, std::string prenume, int numar_clasa) {
     this->nume = nume;
     this->prenume = prenume;
     this->numar_clasa = numar_clasa;
-    litera_clasa = "-";
+    litera_clasa = '-';
     std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << litera_clasa << "\n\n";
 }
 
-Elev::Elev(std::string nume, std::string prenume, int numar_clasa, const char *litera_clasa) {
+Elev::Elev(std::string nume, std::string prenume, int numar_clasa, char litera_clasa) {
     std::cout << "Elevul: ";
     this->nume = nume;
     this->prenume = prenume;
@@ -99,7 +99,7 @@ int main() {
     Elev elev_chelu("Chelu");
     Elev elev_ion("Ion", "Alex");
     Elev elev_popescu("Popescu", "Andreea", 10);
-    Elev elev_andrei("Andrei", "Vasile", 12, "B");
+    Elev elev_andrei("Andrei", "Vasile", 12, 'B');
     Elev elev_copie(elev_andrei);
     Elev copie(elev_liber);
 

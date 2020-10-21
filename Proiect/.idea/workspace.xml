@@ -55,14 +55,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Proiect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Proiect" TARGET_NAME="Proiect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Proiect" RUN_TARGET_NAME="Proiect">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -85,6 +81,7 @@
       <workItem from="1602668285921" duration="610000" />
       <workItem from="1603199708892" duration="660000" />
       <workItem from="1603262976675" duration="623000" />
+      <workItem from="1603275477453" duration="839000" />
     </task>
     <servers />
   </component>
