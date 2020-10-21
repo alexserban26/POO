@@ -31,7 +31,7 @@ Elev::Elev() {
     nume = "-";
     prenume = "-";
     numar_clasa = -1;
-    litera_clasa = (char) '-';
+    litera_clasa = '-';
     std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -40,7 +40,7 @@ Elev::Elev(std::string nume) {
     this->nume = nume;
     prenume = "-";
     numar_clasa = -1;
-    litera_clasa = (char) '-';
+    litera_clasa = '-';
     std::cout << this->nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -49,7 +49,7 @@ Elev::Elev(std::string nume, std::string prenume) {
     this->nume = nume;
     this->prenume = prenume;
     numar_clasa = -1;
-    litera_clasa = (char) '-';
+    litera_clasa = '-';
     std::cout << this->nume << " " << this->prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
 }
 
@@ -86,12 +86,6 @@ Elev::Elev(Elev &elev) {
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate." << "\n\n\n";
 }
-//
-//class Materie{
-//    class info{
-//        int note[10];
-//    };
-//};
 
 int main() {
 
