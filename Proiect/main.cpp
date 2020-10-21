@@ -86,7 +86,12 @@ Elev::Elev(Elev &elev) {
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate." << "\n\n\n";
 }
-
+//
+//class Materie{
+//    class info{
+//        int note[10];
+//    };
+//};
 
 int main() {
 

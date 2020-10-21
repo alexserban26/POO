@@ -2,7 +2,9 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../../:\Users\alexs\POO\Proiect\.idea/dataSources/
+/../../../../../../:\Users\alexs\POO\Proiect\.idea
+/../../../../../../:\Users\alexs\POO\Proiect\CMakeLists
+/../../../../../../:\Users\alexs\POO\Proiect\cmake-build-debug
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/

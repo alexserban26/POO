@@ -30,50 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6083685a-8a8e-477b-b1ea-293087040f82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../tema/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/.idea/tema.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/CMakeFiles/tema.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/tema.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/cmake-build-debug/tema.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tema/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +45,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectId" id="1ipPYKQzW7WiP6DQ4tXp42onRot" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Proiect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Proiect" TARGET_NAME="Proiect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Proiect" RUN_TARGET_NAME="Proiect">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Proiect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Proiect" TARGET_NAME="Proiect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Proiect" RUN_TARGET_NAME="Proiect">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -105,8 +73,23 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6083685a-8a8e-477b-b1ea-293087040f82" name="Default Changelist" comment="" />
+      <created>1602601609314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602601609314</updated>
+      <workItem from="1602601611208" duration="84000" />
+      <workItem from="1602668285921" duration="610000" />
+      <workItem from="1603199708892" duration="660000" />
+      <workItem from="1603262976675" duration="623000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -121,25 +104,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1602582449534">
+    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1603263906921">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602582449534" />
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1602583172870">
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1097.577@0.0.1280.680" timestamp="1602601676992" />
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603263906921" />
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1602592471140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602583172870" />
-    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1602583172870">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602592471140" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1602592471140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602583172870" />
-    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1602583172870">
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602592471140" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1602592471139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602583172870" />
-    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1602583172870">
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602592471139" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1602592471140">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602583172870" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602592471140" />
   </component>
 </project>
