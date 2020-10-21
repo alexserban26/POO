@@ -1,6 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/.idea
+/CMakeLists
+/cmake-build-debug
 # Datasource local storage ignored files
 /../../../../../../:\Users\alexs\POO\Proiect\.idea
 /../../../../../../:\Users\alexs\POO\Proiect\CMakeLists
