@@ -1,12 +1,16 @@
 #include <iostream>
+#include <vector>
+#include <utility>
+
 class situatie_scolara{
     std::string materie;
     int nota;
+    std::vector<std::pair<std::string,int>> materii;
 
 public:
 
     void afisare_note(){
-        std::cout<<"Materie:"<<materie<<' '<<"Nota"<<nota<<"\n";
+        std::cout<<"Materie: "<<materie<<' '<<"Nota: "<<nota<<"\n";
     }
 
     situatie_scolara(std::string materie="-", int nota = 0);
@@ -26,19 +30,22 @@ situatie_scolara::situatie_scolara(situatie_scolara &copie) {
 }
 
 situatie_scolara::~situatie_scolara() {
-    std::cout<<"Spatiul a fost eliberat";
+    std::cout<<"Spatiul a fost eliberat\n";
 }
 
 class Elev {
+
+
     std::string nume, prenume;
     int numar_clasa;
     char litera_clasa;
+    friend class situatie_scolara;
     situatie_scolara note;
 
 
 public:
-
-    Elev(std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-', situatie_scolara note);
+    //Elev(std::string nume, std::string prenume, int numar_clasa, char litera_clasa, situatie_scolara note);
+    Elev(situatie_scolara note,std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-');
 
     Elev(Elev &);
 
@@ -51,7 +58,7 @@ public:
 
 };
 
-Elev::Elev(std::string nume , std::string prenume , int numar_clasa, char litera_clasa, situatie_scolara note) {
+Elev::Elev(situatie_scolara note,std::string nume , std::string prenume , int numar_clasa, char litera_clasa) {
     std::cout << "Elevul: ";
     this->nume = nume;
     this->prenume = prenume;
@@ -67,18 +74,21 @@ Elev::Elev(Elev &elev) {
     prenume = elev.prenume;
     numar_clasa = elev.numar_clasa;
     litera_clasa = elev.litera_clasa;
+    note=elev.note;
 
-    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << this->litera_clasa<< "\n";
+    afisare_info_elev();
+
 }
 
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
 }
 
+
 int main() {
 
     situatie_scolara nota_info("Informatica",5);
-    Elev elev_andrei("Andrei", "Vasile", 12, 'B', nota_info);
+    Elev elev_andrei(nota_info,"Andrei", "Vasile", 12, 'B');
     Elev elev_copie(elev_andrei);
 
 
