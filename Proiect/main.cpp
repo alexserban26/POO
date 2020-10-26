@@ -1,37 +1,38 @@
 #include <iostream>
 #include <vector>
-#include <utility>
 
-class situatie_scolara{
-    std::string materie;
-    int nota;
-    std::vector<std::pair<std::string,int>> materii;
+using namespace std;
 
+class situatie_scolara {
+    vector<pair<string, vector<int>>> materii;
 public:
+    situatie_scolara() {};
 
-    void afisare_note(){
-        std::cout<<"Materie: "<<materie<<' '<<"Nota: "<<nota<<"\n";
+    explicit situatie_scolara(vector<pair<string, vector<int>>> materii1) {
+        for (int i = 0; i < materii1.size(); i++)
+            this->materii.push_back(materii1[i]);
     }
 
-    situatie_scolara(std::string materie="-", int nota = 0);
-    situatie_scolara(situatie_scolara &);
-    ~situatie_scolara();
+    void afisare_note() {
+        for (int i = 0; i < this->materii.size(); i++) {
+            cout << this->materii[i].first << ": " << '\n';
+            for (int j = 0; j < this->materii[i].second.size(); j++)
+                cout << this->materii[i].second[j] << ' ';
+            cout << endl;
+        }
+    }
 
+    ~situatie_scolara() {
+        for (int i = 0; i < this->materii.size(); i++) {
+            this->materii.pop_back();
+        }
+        cout << "Spatiul a fost eliberat" << endl;
+    }
 };
 
-situatie_scolara::situatie_scolara(std::string materie1, int nota1){
-    this->materie=materie1;
-    this->nota=nota1;
-}
-
-situatie_scolara::situatie_scolara(situatie_scolara &copie) {
-    this->materie = copie.materie;
-    this->nota = copie.nota;
-}
-
-situatie_scolara::~situatie_scolara() {
-    std::cout<<"Spatiul a fost eliberat\n";
-}
+//situatie_scolara::situatie_scolara() {
+//
+//}
 
 class Elev {
 
@@ -39,32 +40,37 @@ class Elev {
     std::string nume, prenume;
     int numar_clasa;
     char litera_clasa;
+
     friend class situatie_scolara;
+
     situatie_scolara note;
 
 
 public:
-    //Elev(std::string nume, std::string prenume, int numar_clasa, char litera_clasa, situatie_scolara note);
-    Elev(situatie_scolara note,std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-');
+
+    Elev(situatie_scolara note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
+         char litera_clasa = '-');
 
     Elev(Elev &);
 
     ~Elev();
 
-    void afisare_info_elev(){
-        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa<< "\n";
-        note.afisare_note();
+    void afisare_info_elev() {
+        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
+        this->note.afisare_note();
     }
 
 };
 
-Elev::Elev(situatie_scolara note,std::string nume , std::string prenume , int numar_clasa, char litera_clasa) {
+Elev::Elev(situatie_scolara note, std::string nume, std::string prenume, int numar_clasa, char litera_clasa) {
     std::cout << "Elevul: ";
+
     this->nume = nume;
     this->prenume = prenume;
     this->numar_clasa = numar_clasa;
     this->litera_clasa = litera_clasa;
-    this->note=note;
+    this->note = note;
+
     afisare_info_elev();
 }
 
@@ -74,7 +80,7 @@ Elev::Elev(Elev &elev) {
     prenume = elev.prenume;
     numar_clasa = elev.numar_clasa;
     litera_clasa = elev.litera_clasa;
-    note=elev.note;
+    note = elev.note;
 
     afisare_info_elev();
 
@@ -87,10 +93,15 @@ Elev::~Elev() {
 
 int main() {
 
-    situatie_scolara nota_info("Informatica",5);
-    Elev elev_andrei(nota_info,"Andrei", "Vasile", 12, 'B');
+    pair<string, vector<int>> temp1, temp2;
+    vector<int> v1, v2;
+    v1 = {1, 2, 3};
+    v2 = {4, 5, 6};
+    temp1 = make_pair("Informatica", v1);
+    temp2 = make_pair("Matematica", v2);
+    situatie_scolara note({temp1, temp2});
+    Elev elev_andrei(note, "Andrei", "Vasile", 12, 'B');
     Elev elev_copie(elev_andrei);
-
 
 
     return 0;
