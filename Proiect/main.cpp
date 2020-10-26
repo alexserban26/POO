@@ -7,13 +7,13 @@ class Elev {
     char litera_clasa;
 
 public:
-    Elev();
-
-    explicit Elev(std::string);
-
-    Elev(std::string, std::string);
-
-    Elev(std::string, std::string, int);
+//    Elev();
+//
+//    explicit Elev(std::string);
+//
+//    Elev(std::string, std::string);
+//
+//    Elev(std::string, std::string, int);
 
     Elev(std::string, std::string, int, char );
 
@@ -26,43 +26,43 @@ public:
 
 };
 
-Elev::Elev() {
-    std::cout << "Elevul: ";
-    nume = "-";
-    prenume = "-";
-    numar_clasa = -1;
-    litera_clasa = '-';
-    std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-}
+//Elev::Elev() {
+//    std::cout << "Elevul: ";
+//    nume = "-";
+//    prenume = "-";
+//    numar_clasa = -1;
+//    litera_clasa = '-';
+//    std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
+//}
+//
+//Elev::Elev(std::string nume) {
+//    std::cout << "Elevul: ";
+//    this->nume = nume;
+//    prenume = "-";
+//    numar_clasa = -1;
+//    litera_clasa = '-';
+//    std::cout << this->nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
+//}
+//
+//Elev::Elev(std::string nume, std::string prenume) {
+//    std::cout << "Elevul: ";
+//    this->nume = nume;
+//    this->prenume = prenume;
+//    numar_clasa = -1;
+//    litera_clasa = '-';
+//    std::cout << this->nume << " " << this->prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
+//}
+//
+//Elev::Elev(std::string nume, std::string prenume, int numar_clasa) {
+//    std::cout << "Elevul: ";
+//    this->nume = nume;
+//    this->prenume = prenume;
+//    this->numar_clasa = numar_clasa;
+//    litera_clasa = '-';
+//    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << litera_clasa << "\n\n";
+//}
 
-Elev::Elev(std::string nume) {
-    std::cout << "Elevul: ";
-    this->nume = nume;
-    prenume = "-";
-    numar_clasa = -1;
-    litera_clasa = '-';
-    std::cout << this->nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-}
-
-Elev::Elev(std::string nume, std::string prenume) {
-    std::cout << "Elevul: ";
-    this->nume = nume;
-    this->prenume = prenume;
-    numar_clasa = -1;
-    litera_clasa = '-';
-    std::cout << this->nume << " " << this->prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-}
-
-Elev::Elev(std::string nume, std::string prenume, int numar_clasa) {
-    std::cout << "Elevul: ";
-    this->nume = nume;
-    this->prenume = prenume;
-    this->numar_clasa = numar_clasa;
-    litera_clasa = '-';
-    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << litera_clasa << "\n\n";
-}
-
-Elev::Elev(std::string nume, std::string prenume, int numar_clasa, char litera_clasa) {
+Elev::Elev(std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-') {
     std::cout << "Elevul: ";
     this->nume = nume;
     this->prenume = prenume;
@@ -86,6 +86,14 @@ Elev::Elev(Elev &elev) {
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate." << "\n\n\n";
 }
+
+class situatie_scolara{
+
+};
+
+class Materie{
+
+};
 
 int main() {
 
