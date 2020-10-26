@@ -1,75 +1,64 @@
 #include <iostream>
+class situatie_scolara{
+    std::string materie;
+    int nota;
+
+public:
+
+    void afisare_note(){
+        std::cout<<"Materie:"<<materie<<' '<<"Nota"<<nota<<"\n";
+    }
+
+    situatie_scolara(std::string materie="-", int nota = 0);
+    situatie_scolara(situatie_scolara &);
+    ~situatie_scolara();
+
+};
+
+situatie_scolara::situatie_scolara(std::string materie1, int nota1){
+    this->materie=materie1;
+    this->nota=nota1;
+}
+
+situatie_scolara::situatie_scolara(situatie_scolara &copie) {
+    this->materie = copie.materie;
+    this->nota = copie.nota;
+}
+
+situatie_scolara::~situatie_scolara() {
+    std::cout<<"Spatiul a fost eliberat";
+}
 
 class Elev {
     std::string nume, prenume;
-    //std:: string CNP;
     int numar_clasa;
     char litera_clasa;
+    situatie_scolara note;
+
 
 public:
-//    Elev();
-//
-//    explicit Elev(std::string);
-//
-//    Elev(std::string, std::string);
-//
-//    Elev(std::string, std::string, int);
 
-    Elev(std::string, std::string, int, char );
+    Elev(std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-', situatie_scolara note);
 
     Elev(Elev &);
 
     ~Elev();
 
-    //void afisare_info_elev();
-
+    void afisare_info_elev(){
+        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa<< "\n";
+        note.afisare_note();
+    }
 
 };
 
-//Elev::Elev() {
-//    std::cout << "Elevul: ";
-//    nume = "-";
-//    prenume = "-";
-//    numar_clasa = -1;
-//    litera_clasa = '-';
-//    std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-//}
-//
-//Elev::Elev(std::string nume) {
-//    std::cout << "Elevul: ";
-//    this->nume = nume;
-//    prenume = "-";
-//    numar_clasa = -1;
-//    litera_clasa = '-';
-//    std::cout << this->nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-//}
-//
-//Elev::Elev(std::string nume, std::string prenume) {
-//    std::cout << "Elevul: ";
-//    this->nume = nume;
-//    this->prenume = prenume;
-//    numar_clasa = -1;
-//    litera_clasa = '-';
-//    std::cout << this->nume << " " << this->prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n\n";
-//}
-//
-//Elev::Elev(std::string nume, std::string prenume, int numar_clasa) {
-//    std::cout << "Elevul: ";
-//    this->nume = nume;
-//    this->prenume = prenume;
-//    this->numar_clasa = numar_clasa;
-//    litera_clasa = '-';
-//    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << litera_clasa << "\n\n";
-//}
-
-Elev::Elev(std::string nume = "-", std::string prenume = "-", int numar_clasa= -1, char litera_clasa = '-') {
+Elev::Elev(std::string nume , std::string prenume , int numar_clasa, char litera_clasa, situatie_scolara note) {
     std::cout << "Elevul: ";
     this->nume = nume;
     this->prenume = prenume;
     this->numar_clasa = numar_clasa;
     this->litera_clasa = litera_clasa;
-    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << this->litera_clasa
-              << "\n\n";
+    this->note=note;
+    afisare_info_elev();
 }
 
 Elev::Elev(Elev &elev) {
@@ -79,31 +68,19 @@ Elev::Elev(Elev &elev) {
     numar_clasa = elev.numar_clasa;
     litera_clasa = elev.litera_clasa;
 
-    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << this->litera_clasa
-              << "\n\n";
+    std::cout << this->nume << " " << this->prenume << " Clasa " << this->numar_clasa << " " << this->litera_clasa<< "\n";
 }
 
 Elev::~Elev() {
-    std::cout << "Datele elevului au fost afisate." << "\n\n\n";
+    std::cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
 }
-
-class situatie_scolara{
-
-};
-
-class Materie{
-
-};
 
 int main() {
 
-    Elev elev_liber;
-    Elev elev_chelu("Chelu");
-    Elev elev_ion("Ion", "Alex");
-    Elev elev_popescu("Popescu", "Andreea", 10);
-    Elev elev_andrei("Andrei", "Vasile", 12, 'B');
+    situatie_scolara nota_info("Informatica",5);
+    Elev elev_andrei("Andrei", "Vasile", 12, 'B', nota_info);
     Elev elev_copie(elev_andrei);
-    Elev copie(elev_liber);
+
 
 
     return 0;
