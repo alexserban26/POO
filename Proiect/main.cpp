@@ -21,6 +21,20 @@ public:
             cout << endl;
         }
     }
+    void medie(){
+        int s=0;
+        for (int i = 0; i < this->materii.size(); i++) {
+            cout << "Media la " << this->materii[i].first << " este: ";
+            for (int j = 0; j < this->materii[i].second.size(); j++)
+                s += this->materii[i].second[j];
+            cout<< s/this->materii[i].second.size()<<' ';
+            if((s/this->materii[i].second.size())<5)
+                cout<<"CORIGENT"<<endl;
+            else cout<<"PROMOVAT"<<endl;
+            s=0;
+        }
+        cout<<endl;
+    }
 
     ~situatie_scolara() {
         for (int i = 0; i < this->materii.size(); i++) {
@@ -29,10 +43,6 @@ public:
         cout << "Spatiul a fost eliberat" << endl;
     }
 };
-
-//situatie_scolara::situatie_scolara() {
-//
-//}
 
 class Elev {
 
@@ -58,6 +68,7 @@ public:
     void afisare_info_elev() {
         std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
         this->note.afisare_note();
+        this->note.medie();
     }
 
 };
