@@ -41,6 +41,8 @@ public:
             this->materii.pop_back();
         }
         cout << "Spatiul a fost eliberat" << endl;
+
+        
     }
 };
 
