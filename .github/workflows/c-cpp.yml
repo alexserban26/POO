@@ -34,7 +34,7 @@ jobs:
         gcov *.cpp
         mkdir cov/
         gcovr -r . --html --html-details -o cov/coverage.html --print-summary
-        mv -v cov/  public/
+        mv -v cov/  ../public/
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
