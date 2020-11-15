@@ -1,4 +1,5 @@
 #include <iostream>
+//#include <utility>
 #include <vector>
 
 using namespace std;
@@ -6,7 +7,7 @@ using namespace std;
 class situatie_scolara {
     vector<pair<string, vector<int>>> materii;
 public:
-    situatie_scolara() {};
+    situatie_scolara()=default;
 
     explicit situatie_scolara(vector<pair<string, vector<int>>> materii1) {
         for (int i = 0; i < materii1.size(); i++)
@@ -49,7 +50,7 @@ public:
 class Elev {
 
 
-    std::string nume, prenume;
+    string nume, prenume;
     int numar_clasa;
     char litera_clasa;
 
@@ -60,7 +61,7 @@ class Elev {
 
 public:
 
-    Elev(situatie_scolara note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
+    explicit Elev(const situatie_scolara& note, string nume = "-", string prenume = "-", int numar_clasa = -1,
          char litera_clasa = '-');
 
     Elev(Elev &);
@@ -68,18 +69,18 @@ public:
     ~Elev();
 
     void afisare_info_elev() {
-        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
+        cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
         this->note.afisare_note();
         this->note.medie();
     }
 
 };
 
-Elev::Elev(situatie_scolara note, std::string nume, std::string prenume, int numar_clasa, char litera_clasa) {
-    std::cout << "Elevul: ";
+Elev::Elev(const situatie_scolara& note, string nume, string prenume, int numar_clasa, char litera_clasa) {
+    cout << "Elevul: ";
 
-    this->nume = nume;
-    this->prenume = prenume;
+    this->nume = move(nume);
+    this->prenume = move(prenume);
     this->numar_clasa = numar_clasa;
     this->litera_clasa = litera_clasa;
     this->note = note;
@@ -88,7 +89,7 @@ Elev::Elev(situatie_scolara note, std::string nume, std::string prenume, int num
 }
 
 Elev::Elev(Elev &elev) {
-    std::cout << "Functie de copiere: \n";
+    cout << "Functie de copiere: \n";
     nume = elev.nume;
     prenume = elev.prenume;
     numar_clasa = elev.numar_clasa;
@@ -100,7 +101,7 @@ Elev::Elev(Elev &elev) {
 }
 
 Elev::~Elev() {
-    std::cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
+    cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
 }
 
 

@@ -1,0 +1,3 @@
+C:/Users/alexs/POO/Proiect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/alexs/POO/Proiect/cmake-build-debug/CMakeFiles/POO.dir
+C:/Users/alexs/POO/Proiect/cmake-build-debug/CMakeFiles/edit_cache.dir
