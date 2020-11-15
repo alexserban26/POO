@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 set(Proiect main.cpp)
 
 # Add executable target with source files listed in SOURCE_FILES variable
-add_executable(POO ${Proiect})
+add_executable(Proiect main.cpp)

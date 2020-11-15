@@ -27,8 +27,8 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="POO">
-				<Option output="C:/Users/alexs/POO/Proiect/cmake-build-debug/POO.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="Proiect">
+				<Option output="C:/Users/alexs/POO/Proiect/cmake-build-debug/Proiect.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/alexs/POO/Proiect/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -42,14 +42,14 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 POO"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proiect"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="POO/fast">
-				<Option output="C:/Users/alexs/POO/Proiect/cmake-build-debug/POO.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="Proiect/fast">
+				<Option output="C:/Users/alexs/POO/Proiect/cmake-build-debug/Proiect.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/alexs/POO/Proiect/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,7 +63,7 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 POO/fast"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proiect/fast"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alexs/POO/Proiect/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,7 +81,7 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Users/alexs/POO/Proiect/main.cpp">
-			<Option target="POO"/>
+			<Option target="Proiect"/>
 		</Unit>
 		<Unit filename="C:/Users/alexs/POO/Proiect/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

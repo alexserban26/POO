@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named POO
+# Target rules for targets named Proiect
 
 # Build rule for target.
-POO: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 POO
-.PHONY : POO
+Proiect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Proiect
+.PHONY : Proiect
 
 # fast build rule for target.
-POO/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO.dir\build.make CMakeFiles/POO.dir/build
-.PHONY : POO/fast
+Proiect/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proiect.dir\build.make CMakeFiles/Proiect.dir/build
+.PHONY : Proiect/fast
 
 main.obj: main.cpp.obj
 
@@ -148,7 +148,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO.dir\build.make CMakeFiles/POO.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proiect.dir\build.make CMakeFiles/Proiect.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO.dir\build.make CMakeFiles/POO.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proiect.dir\build.make CMakeFiles/Proiect.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,7 +166,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO.dir\build.make CMakeFiles/POO.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proiect.dir\build.make CMakeFiles/Proiect.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,7 +177,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... POO
+	@echo ... Proiect
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
