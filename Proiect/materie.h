@@ -9,15 +9,15 @@
 
 class materie {
 
-protected:
-    std::string nume;
+
     std::vector<int> note;
+    std::string nume;
 
-    public:
-
+public:
+    friend float medie(materie&);
     friend std::istream& operator>>(std::istream& , materie&);
-    friend std::ostream& operator>>(std::ostream& , materie&);
-
+    friend std::ostream& operator<<(std::ostream& , materie&);
+    friend materie operator+(materie&);
 
 };
 

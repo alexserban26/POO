@@ -109,15 +109,7 @@ using namespace std;
 
 int main() {
 
-    pair<string, vector<int>> temp1, temp2;
-    vector<int> v1, v2;
-    v1 = {1, 2, 3};
-    v2 = {4, 5, 6};
-    temp1 = make_pair("Informatica", v1);
-    temp2 = make_pair("Matematica", v2);
-    situatie_scolara note({temp1, temp2});
-    Elev elev_andrei(note, "Andrei", "Vasile", 12, 'B');
-    Elev elev_copie(elev_andrei);
+
 
 
     return 0;

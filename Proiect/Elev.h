@@ -24,16 +24,11 @@ public:
 
     explicit Elev(const situatie_scolara& note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
                   char litera_clasa = '-');
-
     Elev(Elev &);
-
     ~Elev();
+    friend std::istream& operator>>(std::istream& , Elev&);
 
-    void afisare_info_elev() {
-        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
-        this->note.afisare_note();
-        this->note.medie();
-    }
+
 
 };
 

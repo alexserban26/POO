@@ -14,7 +14,6 @@ Elev::Elev(const situatie_scolara& note, std::string nume, std::string prenume, 
     this->litera_clasa = litera_clasa;
     this->note = note;
 
-    afisare_info_elev();
 }
 
 Elev::Elev(Elev &elev) {
@@ -25,10 +24,14 @@ Elev::Elev(Elev &elev) {
     litera_clasa = elev.litera_clasa;
     note = elev.note;
 
-    afisare_info_elev();
+
 
 }
 
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
+}
+
+std::istream& operator>>(std::istream& in, Elev& e){
+
 }

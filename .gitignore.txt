@@ -4,10 +4,10 @@
 /CMakeLists
 /cmake-build-debug
 # Datasource local storage ignored files
-~\POO\Proiect\.idea
-~\POO\Proiect\CMakeLists
-~\POO\Proiect\cmake-build-debug
-~\POO\Proiect\cmake-build-debug\CMakeFiles
+Proiect\.idea
+Proiect\CMakeLists
+Proiect\cmake-build-debug
+Proiect\cmake-build-debug\CMakeFiles
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
