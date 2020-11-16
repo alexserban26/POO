@@ -1,0 +1,41 @@
+//
+// Created by alexs on 15.11.2020.
+//
+
+#ifndef POO_ELEV_H
+#define POO_ELEV_H
+#include <iostream>
+#include "situatie_scolara.h"
+#include "situatie_scolara.cpp"
+
+class Elev {
+
+
+    std::string nume, prenume;
+    int numar_clasa;
+    char litera_clasa;
+
+    friend class situatie_scolara;
+
+    situatie_scolara note;
+
+
+public:
+
+    explicit Elev(const situatie_scolara& note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
+                  char litera_clasa = '-');
+
+    Elev(Elev &);
+
+    ~Elev();
+
+    void afisare_info_elev() {
+        std::cout << nume << " " << prenume << " Clasa " << numar_clasa << " " << litera_clasa << "\n";
+        this->note.afisare_note();
+        this->note.medie();
+    }
+
+};
+
+
+#endif //POO_ELEV_H
