@@ -7,8 +7,10 @@
 std::istream &operator>>(std::istream &in, situatie_scolara &s) {
     int ok=1;
     int i=0;
+    materie m;
     while (ok!=0){
-        in>>s.materii[i];
+        in>>m;
+        s.materii.push_back(m);
         i++;
         std::cout<<"Continuati sa introduceti materii? (1-Da;0-Nu)";
         in>>ok;
