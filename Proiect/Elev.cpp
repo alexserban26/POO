@@ -28,10 +28,12 @@ Elev::Elev(Elev &elev) {
 
 }
 
+std::ostream& operator<<(std::ostream& out, Elev& e){
+    out<<e.nume<<' '<<e.prenume<<' '<<e.numar_clasa<<' '<<e.litera_clasa<<' '<<e.note;
+    return out;
+}
+
 Elev::~Elev() {
     std::cout << "Datele elevului au fost afisate, spatiul a fost eliberat." << "\n";
 }
 
-std::istream& operator>>(std::istream& in, Elev& e){
-
-}

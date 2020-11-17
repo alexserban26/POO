@@ -5,6 +5,7 @@
 #include "materie.h"
 
 std::istream& operator>>(std::istream& in , materie& m){
+    std::cout<<"Introduceti numele materiei:";
     in>>m.nume;
     int ok=1;
     int nota;

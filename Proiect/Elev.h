@@ -26,7 +26,7 @@ public:
                   char litera_clasa = '-');
     Elev(Elev &);
     ~Elev();
-    friend std::istream& operator>>(std::istream& , Elev&);
+    friend std::ostream& operator<<(std::ostream& , Elev&);
 
 
 
