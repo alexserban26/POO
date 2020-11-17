@@ -1,16 +1,4 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-/CMakeLists
-/cmake-build-debug
-# Datasource local storage ignored files
-Proiect\.idea
-Proiect\CMakeLists
-Proiect\cmake-build-debug
-Proiect\cmake-build-debug\CMakeFiles
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
