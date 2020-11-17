@@ -13,6 +13,7 @@ class situatie_scolara{
     std::vector<materie> materii;
     friend class materie;
 
+
 public:
 
     situatie_scolara()=default;

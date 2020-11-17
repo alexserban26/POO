@@ -6,7 +6,7 @@
 #define POO_ELEV_H
 #include <iostream>
 #include "situatie_scolara.h"
-#include "situatie_scolara.cpp"
+
 
 class Elev {
 

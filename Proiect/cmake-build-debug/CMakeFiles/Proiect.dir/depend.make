@@ -4,13 +4,11 @@
 CMakeFiles/Proiect.dir/Elev.cpp.obj: ../Elev.cpp
 CMakeFiles/Proiect.dir/Elev.cpp.obj: ../Elev.h
 CMakeFiles/Proiect.dir/Elev.cpp.obj: ../materie.h
-CMakeFiles/Proiect.dir/Elev.cpp.obj: ../situatie_scolara.cpp
 CMakeFiles/Proiect.dir/Elev.cpp.obj: ../situatie_scolara.h
 
 CMakeFiles/Proiect.dir/main.cpp.obj: ../Elev.h
 CMakeFiles/Proiect.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Proiect.dir/main.cpp.obj: ../materie.h
-CMakeFiles/Proiect.dir/main.cpp.obj: ../situatie_scolara.cpp
 CMakeFiles/Proiect.dir/main.cpp.obj: ../situatie_scolara.h
 
 CMakeFiles/Proiect.dir/materie.cpp.obj: ../materie.cpp

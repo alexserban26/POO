@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/alexs/POO/Proiect/Elev.cpp
-iostream
--
-Elev.h
-C:/Users/alexs/POO/Proiect/Elev.h
-
 C:/Users/alexs/POO/Proiect/Elev.h
 iostream
 -
 situatie_scolara.h
 C:/Users/alexs/POO/Proiect/situatie_scolara.h
-situatie_scolara.cpp
-C:/Users/alexs/POO/Proiect/situatie_scolara.cpp
 
 C:/Users/alexs/POO/Proiect/main.cpp
 iostream
 -
+materie.h
+C:/Users/alexs/POO/Proiect/materie.h
 situatie_scolara.h
 C:/Users/alexs/POO/Proiect/situatie_scolara.h
 Elev.h
@@ -33,10 +27,6 @@ iostream
 -
 vector
 -
-
-C:/Users/alexs/POO/Proiect/situatie_scolara.cpp
-situatie_scolara.h
-C:/Users/alexs/POO/Proiect/situatie_scolara.h
 
 C:/Users/alexs/POO/Proiect/situatie_scolara.h
 iostream
