@@ -1,6 +1,6 @@
 #include <iostream>
 //#include <utility>
-#include <vector>
+//#include <vector>
 #include "situatie_scolara.h"
 #include "Elev.h"
 

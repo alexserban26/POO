@@ -14,6 +14,7 @@ class situatie_scolara{
     friend class materie;
 
 public:
+
     situatie_scolara()=default;
     friend std::istream& operator>>(std::istream& , situatie_scolara&);
     friend std::ostream& operator<<(std::ostream& , situatie_scolara&);

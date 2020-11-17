@@ -4,7 +4,7 @@
 
 #include "situatie_scolara.h"
 
-std::istream& operator>>(std::istream& in, situatie_scolara& s){
+std::istream &operator>>(std::istream &in, situatie_scolara &s) {
     int ok=1;
     int i=0;
     while (ok!=0){
@@ -15,7 +15,9 @@ std::istream& operator>>(std::istream& in, situatie_scolara& s){
     }
     return in;
 }
-std::ostream& operator<<(std::ostream& out, situatie_scolara& s){
+
+
+std::ostream &operator<<(std::ostream &out, situatie_scolara &s) {
     for (int i = 0; i < s.materii.size(); ++i) {
         out<<s.materii[i];
     }

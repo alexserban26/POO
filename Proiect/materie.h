@@ -6,7 +6,7 @@
 #define POO_MATERIE_H
 #include <iostream>
 #include <vector>
-#include "situatie_scolara.h"
+
 
 class materie{
 
