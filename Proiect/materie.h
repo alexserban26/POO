@@ -15,10 +15,10 @@ protected:
     std::string nume;
 
 public:
-    friend float medie(materie&);
+    friend float medie(const materie&);
     friend std::istream& operator>>(std::istream& , materie&);
     friend std::ostream& operator<<(std::ostream& , materie&);
-    friend materie operator+(materie&);
+    friend materie operator+( materie&);
 
 
 };

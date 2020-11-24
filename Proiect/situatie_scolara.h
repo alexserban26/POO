@@ -19,12 +19,12 @@ public:
     situatie_scolara()=default;
     friend std::istream& operator>>(std::istream& , situatie_scolara&);
     friend std::ostream& operator<<(std::ostream& , situatie_scolara&);
-//    ~situatie_scolara() {
-//        for (int i = 0; i < this->materii.size(); i++) {
-//            this->materii.pop_back();
-//        }
-//        std::cout << "Spatiul a fost eliberat" << std::endl;
-//    }
+    ~situatie_scolara() {
+        for (int i = 0; i < this->materii.size(); i++) {
+            this->materii.pop_back();
+        }
+        std::cout << "Spatiul alocat pentru note a fost eliberat" << std::endl;
+    }
 
 };
 

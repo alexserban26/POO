@@ -15,6 +15,8 @@ C:/Users/alexs/POO/Proiect/situatie_scolara.h
 C:/Users/alexs/POO/Proiect/main.cpp
 iostream
 -
+fstream
+-
 materie.h
 C:/Users/alexs/POO/Proiect/materie.h
 situatie_scolara.h
@@ -27,6 +29,10 @@ iostream
 -
 vector
 -
+
+C:/Users/alexs/POO/Proiect/situatie_scolara.cpp
+situatie_scolara.h
+C:/Users/alexs/POO/Proiect/situatie_scolara.h
 
 C:/Users/alexs/POO/Proiect/situatie_scolara.h
 iostream

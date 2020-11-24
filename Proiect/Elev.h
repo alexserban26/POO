@@ -22,10 +22,12 @@ class Elev {
 
 public:
 
-    explicit Elev(const situatie_scolara& note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
-                  char litera_clasa = '-');
+//    explicit Elev(const situatie_scolara& note, std::string nume = "-", std::string prenume = "-", int numar_clasa = -1,
+//                  char litera_clasa = '-');
+    Elev()=default;
     Elev(Elev &);
     ~Elev();
+    friend std::istream& operator>>(std::istream &, Elev&);
     friend std::ostream& operator<<(std::ostream& , Elev&);
 
 

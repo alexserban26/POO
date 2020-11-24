@@ -4,42 +4,41 @@
 
 #include "materie.h"
 
-std::istream& operator>>(std::istream& in , materie& m){
-    std::cout<<"Introduceti numele materiei:";
-    in>>m.nume;
-    int ok=1;
-    int nota;
-    while(ok==1){
-        std::cout<<"Introduceti nota:";
-        in>>nota;
+float medie(const materie &m) {
+    float s = 0;
+    for (int i = 0; i < m.note.size(); ++i) {
+        s += m.note[i];
+    }
+    return s / m.note.size();
+}
+
+std::istream &operator>>(std::istream &in, materie &m) {
+    int nr_note, nota;
+    in >> m.nume;
+    in >> nr_note;
+    for (int j = 0; j < nr_note; ++j) {
+        in >> nota;
         m.note.push_back(nota);
-        std::cout<<"Continuati sa introduceti note? (1-Da;0-Nu)";
-        in>>ok;
     }
     return in;
 }
 
-std::ostream& operator<<(std::ostream& out, materie& m){
-    out<<m.nume<<":\n";
-    for (int i = 0; i < m.note.size(); ++i) {
-        out<<m.note[i]<<' ';
+std::ostream &operator<<(std::ostream &out, materie &m) {
+    out << m.nume << ":\n";
+    for (int j = 0; j < m.note.size(); ++j) {
+        out << m.note[j] << ' ';
     }
-    out<<std::endl;
+    out << std::endl;
+    out << "Media:" << medie(m) << std::endl;
     return out;
 }
 
-materie operator+(materie& m){
+materie operator+(materie &m) {
     int nota;
-    std::cout<<"Introduceti nota:";
-    std::cin>>nota;
+    std::cout << "Introduceti nota:";
+    std::cin >> nota;
     m.note.push_back(nota);
     return m;
 }
 
-float medie(materie& m){
-    float s=0;
-    for (int i = 0; i < m.note.size(); ++i) {
-        s+=m.note[i];
-    }
-    return s/m.note.size();
-}
+
