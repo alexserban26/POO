@@ -19,7 +19,7 @@ public:
     friend std::istream& operator>>(std::istream& , situatie_scolara&);
     friend std::ostream& operator<<(std::ostream& , situatie_scolara&);
     ~situatie_scolara() {
-        for (int i = 0; i < this->materii.size(); i++) {
+        for (unsigned int i = 0; i < materii.size(); i++) {
             this->materii.pop_back();
         }
         std::cout << "Spatiul alocat pentru note a fost eliberat" << std::endl;

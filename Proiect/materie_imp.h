@@ -11,13 +11,13 @@
 
 class materie_imp:public materie {
 
-int nota_teza{};
+float nota_teza{};
 
 public:
-    explicit materie_imp(int notaTeza);
+    explicit materie_imp(float notaTeza);
     std::unique_ptr<materie> copiere() override;
     float medie()override;
-    virtual std::ostream& print(std::ostream&);
+     std::ostream& print(std::ostream&) override;
     //friend std::istream& operator>>(std::istream& , materie_imp&);
     friend std::ostream& operator<<(std::ostream& , std::unique_ptr<materie_imp>&);
     friend materie_imp operator+(materie_imp&);

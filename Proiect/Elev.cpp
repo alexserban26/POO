@@ -18,17 +18,17 @@
 //
 //}
 
-Elev::Elev(Elev &elev) {
-    std::cout << "Functie de copiere: \n";
-    nume = elev.nume;
-    prenume = elev.prenume;
-    numar_clasa = elev.numar_clasa;
-    litera_clasa = elev.litera_clasa;
-    note = elev.note;
-
-
-
-}
+//Elev::Elev(Elev &elev) {
+//    std::cout << "Functie de copiere: \n";
+//    nume = elev.nume;
+//    prenume = elev.prenume;
+//    numar_clasa = elev.numar_clasa;
+//    litera_clasa = elev.litera_clasa;
+//    note = elev.note;
+//
+//
+//
+//}
 
 std::istream& operator>>(std::istream &in, Elev& e){
     in>>e.nume>>e.prenume>>e.numar_clasa>>e.litera_clasa>>e.note;

@@ -27,8 +27,8 @@ float materie_imp::medie() {
 
 std::ostream &operator<<(std::ostream &out, std::unique_ptr<materie_imp> &m) {
     out << m->nume << ":\n";
-    for (int j = 0; j < m->note.size(); ++j) {
-        out << m->note[j] << ' ';
+    for (int j : m->note) {
+        out << j << ' ';
     }
         out << std::endl << "Nota la teza este: " << m->nota_teza;
         out << std::endl;
@@ -37,7 +37,7 @@ std::ostream &operator<<(std::ostream &out, std::unique_ptr<materie_imp> &m) {
 }
 
 materie_imp operator+(materie_imp &m) {
-    int nota, teza;
+    float nota, teza;
     std::cout << "Ce doriti sa introduceti?(0-nota;1-teza)";
     std::cin >> teza;
     std::cout << "Introduceti nota:";
@@ -48,7 +48,7 @@ materie_imp operator+(materie_imp &m) {
     return m;
 }
 
-materie_imp::materie_imp(int notaTeza) : nota_teza(notaTeza) {}
+materie_imp::materie_imp(float notaTeza) : nota_teza(notaTeza) {}
 
 std::unique_ptr<materie> materie_imp::copiere() {
 
