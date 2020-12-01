@@ -11,17 +11,17 @@ using namespace std;
 
 int main() {
     situatie_scolara note;
-    Elev andrei, alex;
+    Elev andrei;
 
     ifstream f("date_elev.in");
     ofstream g("date_elev.out");
     if (f.is_open()&&g.is_open()) {
         f>>andrei;
-        f>>alex;
-        cout<<andrei<<endl<<alex;
+        g<<andrei<<endl;
 
     }
     else cout<<"Fisierul nu a putut fi deschis"<<endl;
     f.close();
+    g.close();
     return 0;
 }

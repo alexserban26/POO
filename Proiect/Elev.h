@@ -12,8 +12,8 @@ class Elev {
 
 
     std::string nume, prenume;
-    int numar_clasa;
-    char litera_clasa;
+    int numar_clasa{};
+    char litera_clasa{};
 
     friend class situatie_scolara;
 

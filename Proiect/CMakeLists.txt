@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 set(Proiect main.cpp)
 
 # Add executable target with source files listed in SOURCE_FILES variable
-add_executable(Proiect main.cpp Elev.h Elev.cpp situatie_scolara.h situatie_scolara.cpp materie.cpp materie.h)
+add_executable(Proiect main.cpp Elev.h Elev.cpp situatie_scolara.h situatie_scolara.cpp materie.cpp materie.h materie_imp.cpp materie_imp.h)

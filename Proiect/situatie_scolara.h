@@ -6,16 +6,15 @@
 #define POO_SITUATIE_SCOLARA_H
 #include <iostream>
 #include <vector>
-#include "materie.h"
+#include <memory>
+#include "materie_imp.h"
 
 class situatie_scolara{
 
-    std::vector<materie> materii;
-    friend class materie;
-
+    std::vector<std::unique_ptr<materie>> materii;
 
 public:
-
+    situatie_scolara& operator=(const situatie_scolara&);
     situatie_scolara()=default;
     friend std::istream& operator>>(std::istream& , situatie_scolara&);
     friend std::ostream& operator<<(std::ostream& , situatie_scolara&);
