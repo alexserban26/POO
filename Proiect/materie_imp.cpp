@@ -7,7 +7,7 @@
 
 float materie_imp::medie() {
     float s = 0;
-    for (float i : note) {
+    for (auto i : note) {
         s += i;
     }
     return ((s / note.size()) * 3 + nota_teza) / 4;
