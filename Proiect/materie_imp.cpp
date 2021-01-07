@@ -5,7 +5,7 @@
 #include "materie_imp.h"
 //#include "materie.h"
 
-float materie_imp::medie() {
+float materie_imp::medie() const {
     float s = 0;
     for (auto i : note) {
         s += i;
@@ -58,9 +58,11 @@ std::unique_ptr<materie> materie_imp::copiere() {
     return mi;
 }
 
-std::ostream &materie_imp::print(std::ostream & out) {
+std::ostream &materie_imp::print(std::ostream &out) const {
     materie::print(out);
-    out<< "Nota la teza este: " << nota_teza;
+    out << "Nota la teza este: " << nota_teza;
     out << std::endl;
     return out;
 }
+
+materie_imp::materie_imp() = default;

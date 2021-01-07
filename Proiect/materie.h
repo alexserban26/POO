@@ -17,12 +17,20 @@ protected:
 
 public:
     virtual ~materie();
-    virtual float medie();
+
+    virtual float medie() const;
+
     virtual std::unique_ptr<materie> copiere();
-    virtual std::ostream& print(std::ostream&);
-    friend std::istream& operator>>(std::istream& , std::unique_ptr<materie>&);
-    friend std::ostream& operator<<(std::ostream& , std::unique_ptr<materie>&);
-    friend materie operator+( materie&);
+
+    virtual std::ostream &print(std::ostream &) const;
+
+    friend std::istream &operator>>(std::istream &, std::unique_ptr<materie> &);
+
+    friend std::ostream &operator<<(std::ostream &, std::unique_ptr<materie> &);
+
+    friend std::ostream &operator<<(std::ostream &, const materie &);
+
+    friend materie operator+(materie &);
 
 
 };

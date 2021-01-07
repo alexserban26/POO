@@ -5,7 +5,7 @@
 #include <memory>
 #include "materie.h"
 
-float materie::medie() {
+float materie::medie() const {
     float s = 0;
     for (float i : note) {
         s += i;
@@ -13,16 +13,16 @@ float materie::medie() {
     return s / note.size();
 }
 
-std::ostream &materie::print(std::ostream &out) {
+std::ostream &materie::print(std::ostream &out) const {
     out << nume << ":\n";
     for (int j : note) {
         out << j << ' ';
     }
     out << std::endl;
-    out << "Media:" << medie()<<' ';
-    if(medie()>=5) out<<"PROMOVAT";
-    else out<<"CORIGENT";
-    out<<std::endl;
+    out << "Media:" << medie() << ' ';
+    if (medie() >= 5) out << "PROMOVAT";
+    else out << "CORIGENT";
+    out << std::endl;
     return out;
 }
 
@@ -48,7 +48,12 @@ std::ostream &operator<<(std::ostream &out, std::unique_ptr<materie> &m) {
 //    else out<<"CORIGENT";
 //    out<<std::endl;
 //    return out;
-   return m->print(out);
+    return m->print(out);
+}
+
+std::ostream &operator<<(std::ostream &out, const materie &m) {
+
+    return m.print(out);
 }
 
 materie operator+(materie &m) {

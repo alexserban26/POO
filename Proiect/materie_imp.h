@@ -9,18 +9,27 @@
 #include "materie.h"
 
 
-class materie_imp:public materie {
+class materie_imp : public materie {
 
-float nota_teza{};
+    float nota_teza{};
+
+    friend class materie_builder;
 
 public:
     explicit materie_imp(float notaTeza);
+
     std::unique_ptr<materie> copiere() override;
-    float medie()override;
-     std::ostream& print(std::ostream&) override;
+
+    float medie() const override;
+
+    std::ostream &print(std::ostream &) const override;
+
     //friend std::istream& operator>>(std::istream& , materie_imp&);
-    friend std::ostream& operator<<(std::ostream& , std::unique_ptr<materie_imp>&);
-    friend materie_imp operator+(materie_imp&);
+    friend std::ostream &operator<<(std::ostream &, std::unique_ptr<materie_imp> &);
+
+    friend materie_imp operator+(materie_imp &);
+
+    materie_imp();
 };
 
 
