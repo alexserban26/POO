@@ -29,8 +29,8 @@ int main() {
         m2 = m1.nume("Matematica").nota_teza(8.33).build();
         cout << m2;
     }
-    catch (unsigned int nr_note) {
-        std::cout << "Note insuficiente: " << nr_note << endl;
+    catch (std::exception &e) {
+        std::cout << "Eroare:\n" << e.what() << "\n";
     }
 
     return 0;

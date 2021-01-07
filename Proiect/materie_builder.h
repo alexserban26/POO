@@ -31,7 +31,7 @@ public:
 
     materie_imp build() {
         if (m.nota_teza != 0 && m.note.size() < 3) {
-            throw (m.note.size());
+            throw (std::runtime_error("Note insuficiente: " + std::to_string(m.note.size())));
         }
 
         return m;
