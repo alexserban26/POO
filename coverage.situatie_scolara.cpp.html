@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>Head</title>
   <style media="screen" type="text/css">
-  
+
     body
     {
       color: #000000;
@@ -269,17 +269,17 @@
             <td class="headerValue">situatie_scolara.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">16</td>
-            <td class="headerTableEntry">20</td>
-            <td class="headerTableEntry" style="background-color:#FFFF55">80.0 %</td>
+            <td class="headerTableEntry">14</td>
+            <td class="headerTableEntry">19</td>
+            <td class="headerTableEntry" style="background-color:LightPink">73.7 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2021-01-07 22:02:01</td>
+            <td class="headerValue">2021-03-07 18:52:33</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">16</td>
-            <td class="headerTableEntry">32</td>
+            <td class="headerTableEntry">14</td>
+            <td class="headerTableEntry">28</td>
             <td class="headerTableEntry" style="background-color:LightPink">50.0 %</td>
           </tr>
         </table>
@@ -298,7 +298,7 @@
       <td width="75%" align="left" class="srcHeader src">Source</td>
     </tr>
 
-    
+
     <tr>
     <td align="right" class="lineno"><pre>1</pre></td>
     <td align="right" class="linebranch"></td>
@@ -345,7 +345,7 @@
     <td align="right" class="lineno"><pre>7</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>std::istream &amp;operator&gt;&gt;(std::istream &amp;in, situatie_scolara &amp;s) {</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::istream &amp;operator>>(std::istream &amp;in, situatie_scolara &amp;s) {</pre></td>
     </tr>
 
     <tr>
@@ -358,15 +358,15 @@
     <tr>
     <td align="right" class="lineno"><pre>9</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
-    <td align="left" class="src coveredLine"><pre>    std::unique_ptr&lt;materie&gt; materie;</pre></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>    std::unique_ptr&lt;materie> materie;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>10</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>    in&gt;&gt;nr_materii;</pre></td>
+    <td align="left" class="src coveredLine"><pre>    in>>nr_materii;</pre></td>
     </tr>
 
     <tr>
@@ -387,7 +387,7 @@
     <td align="right" class="lineno"><pre>13</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 5 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>5</pre></td>
-    <td align="left" class="src coveredLine"><pre>        in&gt;&gt;teza;</pre></td>
+    <td align="left" class="src coveredLine"><pre>        in>>teza;</pre></td>
     </tr>
 
     <tr>
@@ -401,7 +401,7 @@
     <td align="right" class="lineno"><pre>15</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>3</pre></td>
-    <td align="left" class="src coveredLine"><pre>            materie=std::make_unique&lt;materie_imp&gt;(teza);</pre></td>
+    <td align="left" class="src coveredLine"><pre>            materie=std::make_unique&lt;materie_imp>(teza);</pre></td>
     </tr>
 
     <tr>
@@ -415,21 +415,21 @@
     <td align="right" class="lineno"><pre>17</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>            materie=std::make_unique&lt;class materie&gt;();</pre></td>
+    <td align="left" class="src coveredLine"><pre>            materie=std::make_unique&lt;class materie>();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>18</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 5 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>5</pre></td>
-    <td align="left" class="src coveredLine"><pre>        in &gt;&gt; materie;</pre></td>
+    <td align="left" class="src coveredLine"><pre>        in >> materie;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>19</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 5 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 5 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
     <td align="right" class="linecount coveredLine"><pre>5</pre></td>
-    <td align="left" class="src coveredLine"><pre>        s.materii.push_back(materie-&gt;copiere());</pre></td>
+    <td align="left" class="src coveredLine"><pre>        s.materii.push_back(materie->copiere());</pre></td>
     </tr>
 
     <tr>
@@ -541,7 +541,7 @@
     <td align="right" class="lineno"><pre>35</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>        materii.push_back(i-&gt;copiere());</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>        materii.push_back(i->copiere());</pre></td>
     </tr>
 
     <tr>
@@ -560,9 +560,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>38</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
-    <td align="left" class="src coveredLine"><pre>}</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
   </table>
@@ -570,7 +570,7 @@
 
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr><td class="hr"><td></tr>
-    <tr><td class="footer">Generated by: <a href="http://gcovr.com">GCOVR (Version 3.4)</a></td></tr>
+    <tr><td class="footer">Generated by: <a href="http://gcovr.com">GCOVR (Version 4.2)</a></td></tr>
   </table>
   <br>
 
